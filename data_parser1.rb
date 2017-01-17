@@ -3,7 +3,6 @@ class Shipments
 
 
   def destination_info(destination)
-    @report_info = []
     @trip_count = 0
     @destination_revenue = 0
     CSV.foreach("planet_express_logs.csv", headers: true) do |row|
